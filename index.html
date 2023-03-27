@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- bootstrap links for buttons -->
+</head>
+<body>
+    <div class="main_div">
+        <div class="sub-1-div"><p>Calculator</p>
+        </div>
+        <div class="sub-2-div">
+            <div class="sub-2">
+            <div class="display-box"><input type="text" placeholder="0" id="screen"></div>
+            <!--grid container  which holds all the buttons from 0 to 9-->
+            <div class="grid-container">
+                <!--grid items -->
+                <div class="grid-item grid-1"><button type="button" class="btn btn-primary" onclick="allclear()">AC</button></div>
+                <div class="grid-item grid-2"><button type="button" class="btn btn-primary" onclick="show('**2')">x^2</button></div>
+                <div class="grid-item grid-3"><button type="button" class="btn btn-primary" onclick="show('%')">%</button></div>
+                <div class="grid-item grid-4"><button type="button" class="btn btn-primary" onclick="show('**')">x^y</button></div>
+                <div class="grid-item grid-5"><button type="button" class="btn btn-primary" onclick="show('7')">7</button></div>
+                <div class="grid-item grid-6"><button type="button" class="btn btn-primary" onclick="show('8')">8</button></div>
+                <div class="grid-item grid-7"><button type="button" class="btn btn-primary" onclick="show('9')">9</button></div>
+                <div class="grid-item grid-8"><button type="button" class="btn btn-primary" onclick="show('/')">/</button></div>
+                <div class="grid-item grid-9"><button type="button" class="btn btn-primary" onclick="show('4')">4</button></div>
+                <div class="grid-item grid-10"><button type="button" class="btn btn-primary" onclick="show('5')">5</button></div>
+                <div class="grid-item grid-11"><button type="button" class="btn btn-primary" onclick="show('6')">6</button></div>
+                <div class="grid-item grid-12"><button type="button" class="btn btn-primary" onclick="show('*')">*</button></div>
+                <div class="grid-item grid-13"><button type="button" class="btn btn-primary" onclick="show('1')">1</button></div>
+                <div class="grid-item grid-14"><button type="button" class="btn btn-primary" onclick="show('2')">2</button></div>
+                <div class="grid-item grid-15"><button type="button" class="btn btn-primary" onclick="show('3')">3</button></div>
+                <div class="grid-item grid-16"><button type="button" class="btn btn-primary" onclick="show('-')">-</button></div>
+                <div class="grid-item grid-17"><button type="button" class="btn btn-primary" onclick="show('0')">0</button></div>
+                <div class="grid-item grid-18"><button type="button" class="btn btn-primary" onclick="show('.')">.</button></div>
+                <div class="grid-item grid-19"><button type="button" class="btn btn-primary" onclick="calc()">=</button></div>
+                <div class="grid-item grid-20"><button type="button" class="btn btn-primary" onclick="show('+')">+</button></div>
+        </div>
+        </div> 
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
